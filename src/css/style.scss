@@ -1,0 +1,134 @@
+@import 'flex';
+@import 'box';
+@import 'pos';
+@import 'text';
+@import 'color';
+@import 'anim';
+
+html {
+  overflow: hidden;
+}
+
+$color1: #4A96FA;
+body {
+  background-color: #0a0a0a;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  .v-application {
+    font-family: "PingFang SC",Roboto,"Helvetica Neue","Helvetica, Tahoma","PingFang SC-Light","Microsoft YaHei";
+    .primary {
+      background-color: $color1 !important;
+      border-color: $color1 !important;
+    }
+    p {
+      margin-bottom: 5px;
+    }
+    a {
+      text-decoration: none;
+      &.b {
+        color: #333;
+      }
+      &.u:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .v-dialog {
+    background: #fff;
+    flex-grow: 1;
+  }
+  .v-slide-group__next, .v-slide-group__prev {
+    display: none!important;
+  }
+  .menu-bl-3 .v-list-item {
+    border-left: 3px solid transparent;
+  }
+  .v-list-item-group .v-list-item--active {
+    border-left: 3px solid;
+    background: #ECF4FF;
+    pointer-events: none;
+  }
+  thead.v-data-table-header {
+    background: #f0f0f0;
+  }
+  .v-input--is-disabled:not(.v-input--is-readonly) {
+    pointer-events: all;
+  }
+}
+.color-1 {
+  color: $color1;
+}
+
+// .v-main {
+  
+// }
+.v-btn, .v-tab {
+  text-transform: none;
+}
+.v-dialog .v-label {
+  font-size: 18px;
+  &.error--text {
+    color: rgba(0, 0, 0, 0.6)!important;
+  }
+}
+.hide-msg .v-messages {
+  display: none;
+}
+
+.shadow-1 {
+  box-shadow: 0 1px 2px #f0f0f0;
+}
+
+.wrap-0 {
+  width: 100%;
+  padding: 40px 0;
+}
+.wrap-1 {
+  width: 100%;
+  padding: 40px 20px;
+}
+.con-1 {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.con-2 {
+  max-width: 970px;
+  margin: 0 auto;
+}
+.con-3 {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.fl-r { float: right;}
+
+$bdcolor: #E6E8EB;
+.bd-1 {
+  border: 1px solid $bdcolor;
+}
+.bdt-1 {
+  border-top: 1px solid $bdcolor;
+}
+.bdb-1 {
+  border-bottom: 1px solid $bdcolor;
+}
+.bdr-1 {
+  border-right: 1px solid $bdcolor;
+}
+
+.e-table-1 {
+  width: 100%;
+  border-spacing: 0;
+  &, td {
+    border: 1px solid $bdcolor;
+  }
+  & {
+    border-bottom: none;
+    border-right: none;
+  }
+  td {
+    padding: 5px;
+    border-left: none;
+    border-top: none;
+  }
+}
