@@ -60,12 +60,12 @@ export default {
     return {
       links: [
         {
-          icon: "mdi-twitter",
-          href: "https://twitter.com/apebankdao",
+          icon: 'mdi-twitter',
+          href: 'https://twitter.com/apebankdao',
         },
         {
-          icon: "mdi-discord",
-          href: "https://discord.gg/jcX4WvAZ",
+          icon: 'mdi-discord',
+          href: 'https://discord.gg/apebank',
         },
       ],
     };
