@@ -60,6 +60,10 @@ export default {
     return {
       links: [
         {
+          icon: 'mdi-github',
+          href: 'https://github.com/apebank',
+        },
+        {
           icon: 'mdi-twitter',
           href: 'https://twitter.com/apebankdao',
         },
